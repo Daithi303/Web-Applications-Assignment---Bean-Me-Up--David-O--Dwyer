@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel = "shortcut icon" href = "images/favicon.jpg" />
+<link rel = "stylesheet" href = "stylesheet1.css" type = "text/css" />
+<title>Bean Me Up Coffee House</title>
+</head>
+<body>
+
+<div id = "container"><!-- This div holds the entire webpage. -->
+
+<header>
+<div id = "header_text"><!-- This div holds the 'Bean Me Up' text at the top right corner of each webpage. -->
+<span> Bean </span>
+<br>Me
+<br><Span id = "text_up">Up</span>
+</div><!-- End of 'header_text' div. -->
+
+<div id = "header_icon"><!-- This div holds the coffee cup graphic which can be seen beside the header text. -->
+<img src = "images/icon.jpg" alt="Bean Me Up icon">
+
+</div><!-- End of 'header_icon' div. -->
+</header>
+
+<nav>
+<div class="nav_links"><!-- This div holds the links to the other pages in the website.-->
+
+
+<div><a href="index.html">Home</a></div>  &nbsp;&nbsp;&nbsp; <div><a href="gallery.html">Gallery</a></div>  &nbsp;&nbsp;&nbsp;<div><ins>Contact Us</ins></div> &nbsp;&nbsp;&nbsp; <div><a href="news.html">News</a></div>
+
+</div>
+<hr>
+</nav>
+
+
+
+<div id = "content_container"><!-- This div holds both the special offer section to the left of the webpage and 
+also the inner content (to the right)-->
+<div id = "spec_off"><!-- This div holds the special offer contents which is floated left in the page -->
+Special Offer of the Week
+<img src = "images/special_offer.jpg" alt="Coffee and sandwich image">
+<p id = "spec_off_left_align">Get a <span>LARGE</span> <br> Americano with a <br>breakfast toastie for just <br><span>6 Euros.</span>
+</p>
+</div><!-- End of 'spec_off' div. -->
+
+
+<div class= "inner_content" id = "contact_us_inner_content"><!-- This div holds the specific inner content, 
+which is floated to the right of the page. On this page it is made up of a form divided into various sections.-->
+
+
+<div class = "heading_text"><h2>Contact Us</h2></div><!-- This div holds the heading of the inner content. -->
+
+<div id = "form"><!-- This div is wrapped around the form for positioning -->
+<form action = "name_of_server_file.php" method = "post" name = "form1" id = "form1">
+<ins>Please enter your personal details.</ins>
+
+<table><!-- A table is used here to evenly lay out the text and accompanying input tags. -->
+<tr>
+<td>First name&nbsp;&nbsp;</td><td><input type = "text" name = "fName" id = "fName" placeholder = "Enter your first name"></td>
+<td class="table_separator">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>Surname&nbsp;&nbsp;</td><td><input type = "text" name = "sName" id = "sName" placeholder = "Enter your surname"></td>
+</tr>
+
+<tr>
+<td>Address 1&nbsp;&nbsp;</td><td><input type = "text" name = "address_street" id = "address_street" placeholder = "Enter your street address"></td>
+<td class="table_separator">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>Address 2&nbsp;&nbsp;</td><td><input type = "text" name = "address_town" id = "address_town" placeholder = "Enter your town address"></td>
+</tr>
+
+<tr>
+<td>Phone no&nbsp;&nbsp;</td><td><input type = "text" name = "phone_no" id = "phone_no" placeholder = "Enter your phone number"></td>
+<td class="table_separator">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>Email Address&nbsp;&nbsp;</td><td><input type = "text" name = "Email_address" id = "Email_address" placeholder = "Enter your Email Address"></td>
+</tr>
+
+
+</table>
+<br>
+
+<ins>Please enter your favourite type of coffee.</ins>
+<table><!-- A table is used here to evenly lay out the text and accompanying input tags. -->
+<tr>
+<td><input type = "checkbox" name = "coffee_type" value = "Americano">&nbsp;&nbsp;Americano</td>
+<td><input type = "checkbox" name = "coffee_type" value = "Latte">&nbsp;&nbsp;Latte</td>
+</tr>
+<tr>
+<td><input type = "checkbox" name = "coffee_type" value = "Mocha">&nbsp;&nbsp;Mocha</td>
+<td><input type = "checkbox" name = "coffee_type" value = "Cappuccino">&nbsp;&nbsp;Cappuccino</td>
+</tr>
+</table>
+<br>
+
+
+<ins>Please enter where you heard about our coffee house.</ins><br>
+<input list = "grapevine" name = "grapevine">
+<datalist id = "grapevine">
+<option label="Newspaper ad" value = "Newspaper ad">
+<option label="Radio ad" value = "Radio ad">
+<option label="Flyer" value = "Flyer">
+<option label="Other" value = "Other">
+</datalist>
+
+<br>
+<br>
+
+<ins>Would you like to sign up for our newsletter?</ins><p></p>
+
+<input type = "radio" name = "answer" value = "Yes" checked>&nbsp;&nbsp;Yes<br>
+<input type = "radio" name = "answer" value = "No">&nbsp;&nbsp;No<br>
+<br>
+<ins>Please feel free to add any extra comments in the area below.</ins>
+<textarea name = "comments" rows = "2" cols = "70">
+</textarea>
+<br>
+<br>
+<input type = "submit" name = "submit_button" id = "submit_button" value = "submit details">
+
+</form>
+</div><!-- End of 'form' div -->
+
+</div><!-- end of inner_content div-->
+
+
+</div><!-- end of content_container div-->
+<footer>
+Contact us on 061 1237654 or at <a href = "mailto:daithi303@gmail.com">beanmeup@gmail.com</a>
+</footer>
+<div id = "copyright"><i><small>Copyright &copy; 2016 Bean Me Up<br></small></i>
+</div>
+</div>
+</body>
+</html>
+
+

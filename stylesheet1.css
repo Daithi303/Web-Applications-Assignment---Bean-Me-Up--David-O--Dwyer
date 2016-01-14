@@ -1,0 +1,506 @@
+/*Styles the background of the body tag.*/
+body
+{
+	background-color: #000000;
+	background-image:url('images/background1.png');
+}
+
+/*Styles the font, positioning and dimensions of the 'container' div.*/
+#container
+{
+	font-family: Times,"Times New Roman", serif;
+	width:65%; /*this is new*/
+	min-width:960px;
+	background-color: black;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 40px;
+	height:770px;
+}
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article 
+{ 
+	display: block; 
+}
+
+
+/*Styles the 'Bean' portion of the 'Bean Me Up' header text*/
+header span
+{
+	color: #ff9748;
+}
+
+/*Styles the 'Up' portion of the 'Bean Me Up' header text*/
+#text_up
+{
+	color: #91693b;
+}
+
+
+/*Styles the positioning and font of the header tag*/
+header
+{	background-color: black;
+	height:150px;
+	display: inline;
+	float:left;
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 2em;
+	font-weight: 900;
+	width: 210px;
+	color: #eec27a;
+	font-family: cursive, Geneva, sans-serif;
+}
+
+/*specifically styles the div within the header tag*/
+#header_text
+{
+	position:absolute;
+	height:100px;
+	width:100px;
+	float:left;
+	margin-top:-15px;
+	padding-left: 20px;
+}
+
+/*Styles the positioning of the header graphic icon, in this case, the cup of coffee graphic*/
+#header_icon
+{
+	position: relative;
+	float:right;
+	padding-right: 20px;
+}
+
+
+/*Styles the links within the nav tag*/
+nav a
+{   text-decoration:none;
+	color: #eec27a;
+}
+
+/*Styles all the divs within the '.nav_links' class div to have a low opacity when hovered over*/
+.nav_links:hover > div
+{
+	opacity: 0.3;
+}
+
+
+
+/*Styles the specific div being hovered over to have full opacity. This, combined with the above styling 
+causes a link being hovered over to remain the same while all the other links become slightly transparent*/
+.nav_links:hover > div:hover
+{
+	opacity: 1.0;
+}
+
+hr
+{
+	height: 2px;
+	background-color: #212f39;
+	border: none;
+}
+
+.nav_links div
+{
+	display:inline;
+}
+
+/*Styles the font, positioning and background of the nav tag.*/
+nav
+{
+	background-image: url('images/banner1.jpg');
+	height:40px;
+	color: #eec27a;
+	float:right;
+	width: 640px;
+	display: inline;
+	margin-right:20px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 1.8em;
+	padding-top:80px;
+	padding-left:40px;
+}
+
+/*Styles the positioning and dimensions of the 'content_container' div.*/
+#content_container
+{
+    clear: both;
+    color: #fff;
+	min-width:940px;
+	width:100%;
+	margin:auto;
+	height: 505px;
+}
+
+/*Styles the font, positioning, dimensions and background of the div containing the special offer.*/
+#spec_off
+{
+	display:inline;
+	float: left;
+	height:475px;
+	width:250px;
+	margin-left:20px;
+	border: 4px solid #212f39;
+	font-size:2em;
+	color: #d9c2a0;
+	text-align: center;
+	padding-top:20px;
+	background-image:url('images/coffee2.jpg');
+}
+
+/*Styles all images within the 'spec_off' div.*/
+#spec_off img
+{
+	margin-top:20px;
+	margin-left:auto;
+	box-shadow: 2px 2px 10px #000000;
+}
+
+
+/*Styles the second paragraph within the 'spec_off' div.*/
+#spec_off_left_align
+{
+	text-align:left;
+	font-size: .7em;
+	padding-left:15px;
+}
+
+/*Styles the word 'LARGE' within the 'spec_off_left_align' paragraph.*/
+#spec_off_left_align span
+{
+	font-size:2em;
+}
+
+
+/*Styles the 'welcome' div (the top div) in the home page inner content.*/
+#welcome
+{
+	padding-top: 20px;
+	padding-right: 30px;
+	width:600px;
+	height:222px;
+	background-image:url('images/images.jpg');
+	
+}
+
+/*Styles the text within the 'welcome' div.*/
+#welcome span
+{
+	color: #d9c2a0;
+	font-size: 3em;
+	float:right;
+	
+}
+
+/*Styles the positioning, font and background of the 'bean_of_the_week' div.*/
+#bean_of_the_week
+{
+	width:630px;
+	height:246px;
+	background-color: #212f39;
+	margin-top: 15px;
+	color: #d9c2a0;
+	font-size: 1.3em;
+}
+
+
+/*Styles the positioning and dimensions of the div containing the text within the 'bean_of_the_week' div.*/
+#bean_of_the_week_text
+{
+	display:inline;
+	width:410px;
+	padding-left:15px;
+	padding-top:10px;
+	float:left;
+}
+
+#bean_of_the_week_text span
+{
+	color: #eec27a;
+	font-size: 1.3em;
+}
+
+#bean_of_the_week_image
+{
+	display:inline;
+	width:160px;
+	height:213px;
+	float:right;
+	padding-left: 45px;
+	padding-top: 30px;
+}
+
+
+/*Styles the positioning and dimensions of the 'inner_content' class divs.*/
+.inner_content
+{	
+	display:inline;
+	float: right;
+	height:500px;
+	width: 630px;
+	margin-right: 15px;
+}
+
+/*Gives extra styling to three of the four pages containing inner content divs*/
+#gallery_inner_content, #contact_us_inner_content, #news_inner_content
+{
+	background-color: #212f39;
+	height: 503px;	
+}
+
+#contact_us_inner_content
+{
+	overflow:scroll;
+}
+
+/*Styles the footer tags in all pages.*/
+footer
+{
+	height:25px;
+	clear:both;
+	background-color: #603522;
+	padding-left:20px;
+	margin-top:25px;
+	text-align:center;
+	width: 95%;
+	margin-left:auto;
+	margin-right:auto;
+	font-size: 1.3em;
+	padding-top:5px;
+	color: #ffe8c6;
+}
+
+/*Styles the email link i the footer tag.*/
+footer a:link
+{
+	text-decoration: none;
+	color: #ffe8c6;
+}
+
+/*Styles the email link when hovered over.*/
+footer a:hover
+{
+	color: #ff9748;
+}
+
+/*Styles the 'copyright' tag at the bottom of the page.*/
+#copyright
+{
+	color: #d9c2a0;
+	padding-left:30px;
+}
+
+
+/*Styles the positioning of the 'gallery_container' div.*/
+#gallery_container
+{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-20px;
+	width: 600px;
+}
+
+/*Adds padding to images within the 'gallery_container' div.*/
+#gallery_container img
+{
+	padding: 8px;
+}
+
+
+/*Turns the cursor to a pointer icon when hovered over the thumbnails.*/
+.thumbnail:hover
+{
+	cursor: pointer;
+}
+
+/*Styles the central frame within the gallery*/
+#gallery_zoom
+{
+	margin-top:-20px;
+	margin-left:122px;
+	width:300px;
+}
+
+/*Styles the three vertically stacked thumbnails to the left of the gallery.*/
+#side_thumbnails_left
+{
+	margin-top:-310px;
+	margin-left: 23px;
+}
+
+/*Styles the individual images within the 'side_thumbnails_left' div.*/
+#side_thumbnails_left img
+{
+	display: block;
+	padding-bottom:10px;
+}
+
+/*Styles the three vertically stacked thumbnails to the right of the gallery.*/
+#side_thumbnails_right
+{
+	float:right;
+	margin-top:-330px;
+	margin-right: 27px;
+}
+
+/*Styles the individual images within the 'side_thumbnails_left' div.*/
+#side_thumbnails_right img
+{
+	display: block;
+	padding-bottom:10px;
+}
+
+/*Styles all the headings in the inner content sections of each page.*/
+.heading_text
+{
+	font-size: 1.3em;
+	color: #eec27a;
+	text-align:center;
+	margin-top: -15px;
+}
+
+/*Styles the div wrapped around the form tag in the contact us page.*/
+#form
+{	
+	margin-top: -20px;
+	margin-left:40px;
+	width:550px;
+	color: #d9c2a0;
+}
+
+/*Styles the input and textarea tags within the form tag.*/
+form input, form textarea
+{
+	background-color: #dddddd;
+}
+
+/*Styles the caption text within the 'gallery_zoom' div, which hold the central frame for the gallery.*/
+#gallery_zoom figcaption
+{
+	color: #000;
+	font-size: 2em;
+	margin-top:-50px;
+	margin-left:10px;
+}
+
+/*Styles the positioning, dimensions, background and font for the navigation div on the news page ('content navigation').
+Also sets its visibility to hidden (until checkbox is checked)*/
+.message {
+	background: rgb(60, 60, 60);
+	background: rgba(60, 60, 60, .9);
+	position: absolute;
+	top: 578px;
+	width: 630px;
+	height: 100px;
+	visibility:hidden;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+/*Styles the links on the navigation div on the news page ('content navigation').*/
+#link_options a
+{
+	text-align:center;
+	text-decoration:none;
+	color: #bcbcbc;
+}
+
+/*Styles the hover setting of the links on the navigation div on the news page ('content navigation')*/
+#link_options a:hover
+{
+	color: #fff;
+    text-shadow: 2px 2px #000;
+}
+
+/*Styles the list items which order the links on the navigation div on the news page ('content navigation')*/
+#link_options li
+{
+	padding-bottom:10px;
+	list-style-type:none;
+}
+
+
+/*Styles the checkbox which is labelled and further styled below*/
+#toggle 
+{
+  	position:absolute;
+ 	cursor:pointer;
+  	top:678px;
+}
+
+/*Styles the label/checkbox when hovered over*/
+#toggle + label:hover
+{
+	text-shadow: 2px 2px #000;
+	color: #fff;
+}
+
+/*Styles the font, background, dimensions and positioning of the checkbox/label.*/
+#toggle + label {
+	position:absolute;
+	background-color: #212f39;
+	width: 630px;
+	height:35px;
+	color: #bcbcbc;
+	font-size:1.5em;
+	text-align:center;
+	cursor: pointer;
+	top:678px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+/*Gives the checkbox/label a text content.*/
+#toggle + label:after 
+{
+	content:"Content Navigation" ;
+}
+
+/*When the checkbox/label is checked, the navigation div on the news page ("content navigation') is then set to visible.*/
+#toggle:checked ~ .message 
+{
+	visibility:visible;
+}
+
+/*Styles the label after the checkbox/label is checked.*/
+#toggle:checked + label 
+{
+	background-color: #212f39;
+}
+ /*Gives the checkbox/label a text content after it is checked.*/
+#toggle:checked + label:after 
+{
+	content:"Close";
+}
+
+/*Styles the positioning and dimensions of the div which holds the scrolling content of the news page.*/
+#scroll_news_content
+{
+	height:375px;
+	width:560px;
+	background-color: #d9c2a0;
+	margin:-20px 15px 15px 15px;
+	padding:20px;
+	overflow:scroll;
+	color: #333;
+}
+
+/*Styles the h1 tag of the 'scroll_news_content' div.*/
+#scroll_news_content h1
+{
+	text-align:center;
+	font-size: 1.3em;
+}
+
+/*Styles the h2 tag of the 'scroll_news_content' div.*/
+#scroll_news_content h2
+{
+	font-weight: 900;
+}
+
+/*Styles the positioning and dimensions of the video tag in the news page.*/
+#video
+{
+	margin-right:auto;
+	margin-left: auto;
+	width:400px;
+}

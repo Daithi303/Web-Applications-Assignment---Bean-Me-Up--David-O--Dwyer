@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel = "shortcut icon" href = "images/favicon.jpg" />
+<link rel = "stylesheet" href = "stylesheet1.css" type = "text/css" />
+<title>Bean Me Up Coffee House</title>
+</head>
+<body>
+
+<div id = "container"><!-- This div holds the entire webpage. -->
+
+<header>
+<div id = "header_text"><!-- This div holds the 'Bean Me Up' text at the top right corner of each webpage. -->
+<span> Bean </span>
+<br>Me
+<br><Span id = "text_up">Up</span>
+</div><!-- End of 'header_text' div. -->
+
+<div id = "header_icon"><!-- This div holds the coffee cup graphic which can be seen beside the header text. -->
+<img src = "images/icon.jpg" alt="Bean Me Up icon">
+
+</div><!-- End of 'header_icon' div. -->
+</header>
+
+<nav>
+<div class="nav_links"><!-- This div holds the links to the other pages in the website.-->
+
+<div><a href="index.html">Home</a></div>  &nbsp;&nbsp;&nbsp; <div><ins>Gallery</ins></div>  &nbsp;&nbsp;&nbsp;<div><a href="contact_us.html">Contact Us</a></div> &nbsp;&nbsp;&nbsp; <div><a href="news.html">News</a></div>
+
+</div>
+<hr>
+</nav>
+
+
+
+<div id = "content_container"><!-- This div holds both the special offer section to the left of the webpage and 
+also the inner content (to the right)-->
+<div id = "spec_off"><!-- This div holds the special offer contents which is floated left in the page -->
+Special Offer of the Week
+<img src = "images/special_offer.jpg" alt = "Coffee and a sandwich image">
+<p id = "spec_off_left_align">Get a <span>LARGE</span> <br> Americano with a <br>breakfast toastie for just <br><span>6 Euros.</span>
+</p>
+</div><!-- End of 'spec_off' div. -->
+
+<div class= "inner_content" id = "gallery_inner_content"><!-- This div holds the specific inner content, 
+which is floated to the right of the page. On this page it is made up of a gallery consisting of twelve thumnails
+which, when hovered over, will display a larger version of the image in the center of the thumbnails.-->
+
+<div class = "heading_text"><h2>Gallery - Whats on offer </h2></div><!-- This div holds the heading of the inner content. -->
+<div id="gallery_container"><!-- This div holds the gallery thumbnails along with the central communal frame -->
+
+<!--  This java script contains several functions which are used to re-value the src attribute of the central frame
+along with a function to restore the central frame's src to its initial blank jpg content. These functions are called below 
+in the thumbnail links-->
+<script>
+<!--
+function changeImageToCa()
+{
+	document.getElementById("gallery_zoom_img").src = "images/cappuccino_large.jpg";
+	document.getElementById("fig").innerHTML = "Cappuccino";
+}
+
+function changeImageToEs()
+{
+	document.getElementById("gallery_zoom_img").src = "images/espresso_large.jpg";
+	document.getElementById("fig").innerHTML = "Espresso";
+}
+
+function changeImageToMo()
+{
+	document.getElementById("gallery_zoom_img").src = "images/mocha_large.jpg";
+	document.getElementById("fig").innerHTML = "Mocha";
+}
+
+function changeImageToLa()
+{
+	document.getElementById("gallery_zoom_img").src = "images/latte_large.jpg";
+	document.getElementById("fig").innerHTML = "Latte";
+}
+
+function changeImageToAm()
+{
+	document.getElementById("gallery_zoom_img").src = "images/americano_large.jpg";
+	document.getElementById("fig").innerHTML = "Americano";
+}
+
+function changeImageToCh()
+{
+	document.getElementById("gallery_zoom_img").src = "images/chocolate_large.jpg";
+	document.getElementById("fig").innerHTML = "Chocolate";
+}
+
+function changeImageToCk()
+{
+	document.getElementById("gallery_zoom_img").src = "images/cake_large.jpg";
+	document.getElementById("fig").innerHTML = "Chocolate Cake";
+}
+
+function changeImageToCo()
+{
+	document.getElementById("gallery_zoom_img").src = "images/cookies_large.jpg";
+	document.getElementById("fig").innerHTML = "Cookies";
+}
+
+function changeImageToCr()
+{
+	document.getElementById("gallery_zoom_img").src = "images/crisps_large.jpg";
+	document.getElementById("fig").innerHTML = "Crisps";
+}
+
+function changeImageToFa()
+{
+	document.getElementById("gallery_zoom_img").src = "images/fajita_large.jpg";
+	document.getElementById("fig").innerHTML = "Fajitas";
+}
+
+function changeImageToSa()
+{
+	document.getElementById("gallery_zoom_img").src = "images/sandwich_large.jpg";
+	document.getElementById("fig").innerHTML = "Sandwiches";
+}
+
+function changeBack()
+{
+	document.getElementById("gallery_zoom_img").src = "images/frame.jpg";
+	document.getElementById("fig").innerHTML = "&nbsp;";
+}
+
+//-->
+</script>
+
+
+<!-- These are the thumbnails, displayed inline across the top of the section.-->
+<a class="thumbnail" ><img onmouseover = "changeImageToCa()" onmouseout = "changeBack()" src="images/cappuccino_small.jpg" alt = "Cappuccino thumbnail image"></a>
+
+<a class="thumbnail" ><img onmouseover = "changeImageToEs()" onmouseout = "changeBack()" src="images/espresso_small.jpg" alt = "Espresso thumbnail image"></a>
+
+<a class="thumbnail" ><img onmouseover = "changeImageToMo()" onmouseout = "changeBack()" src="images/mocha_small.jpg" alt = "Mocha thumbnail image"></a>
+
+<a class="thumbnail" ><img onmouseover = "changeImageToLa()" onmouseout = "changeBack()" src="images/latte_small.jpg" alt = "Latte thumbnail image"></a>
+
+<a class="thumbnail" ><img onmouseover = "changeImageToAm()" onmouseout = "changeBack()" src="images/americano_small.jpg" alt = "Americano thumbnail image"></a>
+</div><!--  End of 'gallery_container' div. NOTE: Although from a code perspective the gallery container ends here the below gallery-themed divs, when
+rendered also make up the gallery section.-->
+
+<div id = "gallery_zoom"><figure><img id = "gallery_zoom_img" src = "images/frame.jpg" alt = "Gallery frame"><figcaption id = "fig">&nbsp;</figcaption></figure></div>
+<!--  This div holds the central frame of the gallery. -->
+
+
+<div id = "side_thumbnails_left"><!--  This div holds three thumnails that are vertically stacked down the left side of the section. -->
+<a class="thumbnail" ><img onmouseover = "changeImageToCh()" onmouseout = "changeBack()" src="images/chocolate_small.jpg" alt = "Chocolate thumbnail image"></a>
+
+<a class="thumbnail" ><img onmouseover = "changeImageToCk()" onmouseout = "changeBack()" src="images/cake_small.jpg" alt = "Chocolate cake thumbnail image"></a>
+
+<a class="thumbnail" ><img onmouseover = "changeImageToCo()" onmouseout = "changeBack()" src="images/cookies_small.jpg" alt = "Chocolate chp cookies thumbnail image"></a>
+</div><!-- End of 'side_thumbnails_left' div.-->
+
+<div id = "side_thumbnails_right"><!--  This div holds three thumnails that are vertically stacked down the right side of the section. -->
+<a class="thumbnail" ><img onmouseover = "changeImageToCr()" onmouseout = "changeBack()" src="images/crisps_small.jpg" alt = "Crisps thumbnail image"></a>
+
+<a class="thumbnail" ><img onmouseover = "changeImageToFa()" onmouseout = "changeBack()" src="images/fajita_small.jpg" alt = "Fajita thumbnail image"></a>
+
+<a class="thumbnail" ><img onmouseover = "changeImageToSa()" onmouseout = "changeBack()" src="images/sandwich_small.jpg" alt = "Sandwich thumbnail image"></a>
+</div><!-- End of 'side_thumbnails_right' div.-->
+
+</div><!-- end of inner_content div-->
+
+
+</div><!-- end of content_container div-->
+<footer>
+Contact us on 061 1237654 or at <a href = "mailto:daithi303@gmail.com">beanmeup@gmail.com</a>
+</footer>
+<div id = "copyright"><i><small>Copyright &copy; 2016 Bean Me Up<br></small></i>
+</div>
+</div><!-- end of container div-->
+</body>
+</html>
+
+
